@@ -67,7 +67,15 @@ function Index() {
         className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/70 border-b border-hairline"
       >
         <div className="mx-auto max-w-5xl px-6 py-4 flex items-center justify-between text-sm">
-          <span className="font-mono tracking-tight">yb.</span>
+          <a href="#" aria-label="Home" className="group inline-flex items-center gap-2">
+            <span className="relative inline-flex h-8 w-8 items-center justify-center rounded-full border border-hairline bg-surface transition-transform duration-500 group-hover:rotate-[360deg]">
+              <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                <path d="M4 14 L10 4 L12 9 L14 4 L20 14" />
+                <circle cx="12" cy="18" r="1.4" fill="currentColor" stroke="none" />
+              </svg>
+            </span>
+            <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground">Yeswanth</span>
+          </a>
           <nav className="hidden sm:flex gap-6 text-muted-foreground">
             <a href="#about" className="hover:text-foreground transition-colors">About</a>
             <a href="#work" className="hover:text-foreground transition-colors">Work</a>
