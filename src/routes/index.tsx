@@ -1,17 +1,19 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, type Variants } from "framer-motion";
 import { useRef } from "react";
 
 export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const fade = {
+const EASE = [0.22, 1, 0.36, 1] as const;
+
+const fade: Variants = {
   hidden: { opacity: 0, y: 24 },
-  show: (i = 0) => ({
+  show: (i: number = 0) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: i * 0.06 },
+    transition: { duration: 0.7, ease: EASE, delay: i * 0.06 },
   }),
 };
 
