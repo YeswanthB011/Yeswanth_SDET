@@ -147,7 +147,7 @@ function Index() {
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-80px" }}
-                transition={{ duration: 0.6, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
+                transition={{ duration: 0.6, delay: i * 0.08, ease: EASE }}
                 className="flex gap-6 border-b border-hairline pb-6"
               >
                 <span className="font-mono text-xs uppercase tracking-widest text-muted-foreground w-24 shrink-0 pt-1.5">
@@ -172,7 +172,7 @@ function Index() {
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.6, delay: i * 0.05, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 0.6, delay: i * 0.05, ease: EASE }}
               className="group grid grid-cols-12 gap-4 items-baseline border-b border-hairline py-8 hover:bg-surface/60 transition-colors duration-500 px-2 -mx-2"
             >
               <span className="col-span-1 font-mono text-xs text-muted-foreground pt-2">
@@ -224,7 +224,7 @@ function Index() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.8, ease: EASE }}
             className="font-display text-[clamp(2.5rem,8vw,6rem)] leading-[1]"
           >
             Let's talk —
