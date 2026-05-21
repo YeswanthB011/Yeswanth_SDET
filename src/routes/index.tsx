@@ -49,7 +49,7 @@ const links = [
   { label: "GitHub", href: "https://github.com/YeswanthB011" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/yeswanth-b-8748aa1a7/" },
   { label: "Instagram", href: "https://www.instagram.com/yeswanth_11.1/" },
-  { label: "Résumé", href: `${import.meta.env.BASE_URL}Yeswanth_Resume.pdf` },
+  { label: "Resume", href: `${import.meta.env.BASE_URL}Yeswanth_Resume.pdf` },
 ];
 
 function Index() {
